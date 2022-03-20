@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367932930135",
+    "project_id": "blogrway",
+    "storage_bucket": "blogrway.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367932930135:android:baefb4098484c601384b12",
+        "android_client_info": {
+          "package_name": "com.example.blogrway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367932930135-34uc63i418d0aoki1mmeqcr1081snanf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2UOWdKBuDV24SZNt1Tj3gAzT_BwJ5qBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367932930135-34uc63i418d0aoki1mmeqcr1081snanf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

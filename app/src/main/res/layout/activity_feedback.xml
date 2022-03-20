@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cream"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/post_progressBar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addpost_toolbar1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+
+            android:hint="Name.."
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="@color/dark_blue"
+            app:boxStrokeColor="@color/teal_200"
+            app:boxStrokeWidth="2dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_text"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_-@.# "
+                android:inputType="textFilter|textVisiblePassword|textNoSuggestions"
+                tools:layout_editor_absoluteX="-30dp"
+                android:maxLength="20"
+                tools:layout_editor_absoluteY="392dp"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="306dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Message.."
+            android:padding="10dp"
+            android:textColorHint="@color/dark_blue"
+            app:boxStrokeColor="@color/teal_200"
+            app:boxStrokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/feedback_text"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_-@.# "
+                android:inputType="textFilter|textVisiblePassword|textNoSuggestions"
+                android:textColor="@color/black"
+                android:maxLength="200"
+                tools:layout_editor_absoluteX="-30dp"
+                tools:layout_editor_absoluteY="392dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lengthtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/filledTextField3"
+            android:layout_marginStart="12dp"
+            android:text="Character limit 20, 200 respectively, Later it'll stop! "
+            android:textSize="15sp"
+            android:textColor="#FB0600"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/post_progressBar1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_post_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/feeback_btn"
+        android:layout_width="143dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pinkgrad"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addpost_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluegrad"
+        android:elevation="80dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutus">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <com.shashank.sony.fancyaboutpagelib.FancyAboutPage
+                android:id="@+id/fancyaboutpage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginLeft="210dp"
+                    app:strokeWidth="4dp"
+                    app:strokeColor="#0091EA">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/paymentlogo"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/akshayimg" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </com.shashank.sony.fancyaboutpagelib.FancyAboutPage>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cream"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/elcipse"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="15dp"/>
+
+            <TextView
+                android:id="@+id/username_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/profile_pic1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/date_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="31/12/2020"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/profile_pic1"
+                app:layout_constraintTop_toBottomOf="@+id/username_tv1" />
+
+            <TextView
+                android:id="@+id/topic_tv"
+                android:layout_width="294dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:text="Topic Heading"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_pic1"
+                app:srcCompat="@drawable/rectangle" />
+
+            <TextView
+                android:id="@+id/headline_tv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:text="Headlines"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topic_tv" />
+
+            <TextView
+                android:id="@+id/deepstory"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:scrollbars = "vertical"
+                android:layout_marginLeft="9dp"
+                android:textColor="@color/black"
+                android:text="Story will come here"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headline_tv" />
+
+            <ImageView
+                android:id="@+id/like_btn1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deepstory"
+                app:srcCompat="@drawable/ic_uparrow" />
+
+            <TextView
+                android:id="@+id/like_count_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:text="0 Likes"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/like_btn1"
+                app:layout_constraintTop_toTopOf="@+id/like_btn1" />
+
+            <ImageView
+                android:id="@+id/dislike_btn1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="111dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deepstory"
+                app:srcCompat="@drawable/ic_downarrow" />
+
+            <TextView
+                android:id="@+id/dislike_count_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:text="0 Likes"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/dislike_btn1"
+                app:layout_constraintTop_toTopOf="@+id/dislike_btn1" />
+
+
+            <ImageView
+                android:id="@+id/comments_post1"
+                android:layout_width="116dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/headline_tv"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/dislike_count_tv1"
+                app:layout_constraintTop_toTopOf="@+id/dislike_count_tv1"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/comments" />
+
+            <ImageButton
+                android:id="@+id/delete_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
