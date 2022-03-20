@@ -1,5 +1,5 @@
 # Blogrway
-<img src="https://i.postimg.cc/pXvb5d1W/splashlogog.jpg" alt="Logo" width="40" height="40"/>
+<img src="https://i.postimg.cc/pXvb5d1W/splashlogog.jpg" alt="Logo" width="70" height="80"/>
 <h3 align="center">Blogging Application</h3>
 
 Write something awesome and feature on Top blogs of the week, get notified when your followed blogger posts something, small app size with auto updates within the app\n\n Comment on blog you let the blogger know what you think about the blog, share the blog using our app, directly start a blog from your galley, simply share the image from you gallery directly to our app and start writing!
