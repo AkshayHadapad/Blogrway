@@ -2,7 +2,7 @@
 <h3 align="center">Blogging Application</h3>
 
 
-Write something awesome and feature on Top blogs of the week, get notified when your followed blogger posts something, small app size with auto updates within the app\n\n Comment on blog you let the blogger know what you think about the blog, share the blog using our app, directly start a blog from your galley, simply share the image from you gallery directly to our app and start writing!
+Write something awesome and feature on  blogs , small app size with auto updates within the app\n\n Comment on blog you let the blogger know what you think about the blog, share the blog using our app, directly start a blog from your galley, simply share the image from you gallery directly to our app and start writing!
 keep blogging 
 
 <h3 align="left">Languages and Tools:</h3>
