@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private EditText emailSignUp, passSignUp;
+    private EditText emailSignUp, passSignUp,passSignUp2;
     private Button signUpBtn;
     private TextView signINText;
     private FirebaseAuth auth;
@@ -31,6 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         emailSignUp = findViewById(R.id.sign_up_email);
         passSignUp = findViewById(R.id.sing_up_pass);
+        passSignUp2 = findViewById(R.id.sing_up_pass2);
         signUpBtn = findViewById(R.id.sign_up_btn);
         signINText = findViewById(R.id.sign_in_text);
 
@@ -45,8 +46,10 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String email = emailSignUp.getText().toString();
-                String pass = passSignUp.getText().toString();
-
+                String pass="";
+                if((passSignUp.getText().toString())==(passSignUp2.getText().toString())){
+                     pass = passSignUp.getText().toString();
+                }
                 if (!email.isEmpty() && !pass.isEmpty()) {
                     auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener< AuthResult >() {
                         @Override
@@ -61,7 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
                         }
                     });
                 } else {
-                    Toast.makeText(SignUpActivity.this, "Please Enter Email and Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "Please Enter Email and Same Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });
