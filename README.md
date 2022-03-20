@@ -1,5 +1,4 @@
-# Blogrway
-# <img src="https://i.postimg.cc/pXvb5d1W/splashlogog.jpg" alt="Logo" width="70" height="80"/>
+# Blogrway <img src="https://i.postimg.cc/pXvb5d1W/splashlogog.jpg" alt="Logo" width="70" height="80"/>
 <h3 align="center">Blogging Application</h3>
 
 
