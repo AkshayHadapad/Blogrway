@@ -9,7 +9,7 @@
 
 <h3 align="left">Screenshots:</h3>
 <p float="left">
-<img src="https://i.postimg.cc/1RLXkydD/splash.png" width="200" /> <img src="https://i.postimg.cc/MGKp7HcJ/login.png" width="250" /> 
+<img src="https://i.postimg.cc/1RLXkydD/splash.png" width="200" /> <img src="https://i.postimg.cc/MGKp7HcJ/login.png" width="200" /> 
 <img src="https://i.postimg.cc/PfLNVCSt/regis.png" width="200" />
 <img src="https://i.postimg.cc/25c82Yvb/blogs.png" width="200" />
 <img src="https://i.postimg.cc/85cg5r7s/addblog.png" width="200" />
